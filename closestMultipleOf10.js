@@ -4,5 +4,13 @@
 	// 25 ===> 30
 	// 37 ===> 40
  function closestMultipleOf10(num) {
- 	//your code is here
- }
+ 	      return function(x){
+ 	      	
+ 		if(x === undefined) {
+ 		  	return num;
+
+ 		 }
+ 		  	return closestMultipleOf10(num*x);
+ 	}
+ 	
+}
